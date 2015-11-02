@@ -1,7 +1,7 @@
 /*
 program to determine the Nth number of the fibonacci sequence
 author: markus
-  date: 2015-10-29
+  date: 2015-11-02
 */
 
 #include <iostream>
@@ -15,7 +15,7 @@ int main(){
 	int f1=1;						// declares integer f1, sets value 1
 	int f=1;						// declares integer f, sets value 1
 
-	cout << "Please enter a value for N" << endl;		// prints text to console
+	cout << "Please enter an integer value for N" << endl;	// prints text to console
 	cout << "N = ";
 	cin >> N;						// value for N is read from console
 
