@@ -19,16 +19,17 @@ int main(){
 	cout << "N = ";
 	cin >> N;						// value for N is read from console
 
-	if (N<0)						// checks if N<0
-		cout << "N must be positive" << endl;		// prints error
+	if (cin.fail())						// checks if input to N is declared type
+		cout << "N must be an integer value" << endl;	// prints error
+
+	else{
+	if (N<0 || N>46)					// checks if N<0 or N>46
+		cout << "N must be positive and N<46" << endl;	// prints error
 
 	else{
 	if (N==0)						// checks if N=0
 		cout << "f(" << N << ") = 0" << endl;		// prints f(N)=0
 
-	else{
-	if (N>46)						// checks if N>46
-		cout << "N too big to calculate" << endl;	// prints error
 
 	else{							// if N not 0, executes for-loop
 
